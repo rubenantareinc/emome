@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import crypto from 'crypto';
 
 dotenv.config();
 const app = express();
@@ -17,9 +18,9 @@ const __dirname = path.dirname(__filename);
 // Serve frontend static files
 app.use(express.static(path.join(__dirname, '../frontend/build')));
 
-// In-memory user and timeline storage
-const users = {};
-const timelines = {};
+// API routes
+let users = {};
+let timelines = {};
 
 app.post('/api/register', (req, res) => {
   const id = crypto.randomUUID();
@@ -33,11 +34,7 @@ app.post('/api/:uid/friend', (req, res) => {
   res.json({ ok: true });
 });
 
-app.get('/api/:uid/timeline', (req, res) => {
-  res.json(timelines[req.params.uid] || []);
-});
-
-// Fallback to index.html for SPA
+// For any other request, serve frontend
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, '../frontend/build/index.html'));
 });
