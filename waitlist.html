@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emome – Join Waitlist</title>
+    <meta
+      name="description"
+      content="Join the Emome waitlist to be the first to try our emotional tracking app and receive personalised emotional wellness reports."
+    />
+    <link rel="icon" type="image/png" href="assets/images/emome-logo.png" />
+    <!-- Import futuristic fonts, now including Chakra Petch for the logo -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@400;500;600&family=Chakra+Petch:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css" />
+    <style>
+      /* Fonts imported globally; override removed */
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between"
+      >
+        <a href="index.html" class="flex items-center">
+          <!-- Glowing Emome logo recreated in text with a neon star -->
+          <span class="logo">Em<span class="logo-star">✦</span>me</span>
+        </a>
+        <nav class="hidden md:flex items-center space-x-4">
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="features.html" class="nav-link">Features</a>
+          <a href="demo.html" class="nav-link">Demo</a>
+          <a href="founder.html" class="nav-link">Founder</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a
+            href="waitlist.html"
+            class="btn btn-primary text-sm ml-2"
+            >Join Waitlist</a
+          >
+        </nav>
+        <button
+          id="nav-toggle"
+          class="md:hidden flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-accent focus:outline-none"
+          aria-label="Toggle navigation"
+        >
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <a href="index.html" class="block nav-link">Home</a>
+        <a href="features.html" class="block nav-link">Features</a>
+        <a href="demo.html" class="block nav-link">Demo</a>
+        <a href="founder.html" class="block nav-link">Founder</a>
+        <a href="contact.html" class="block nav-link">Contact</a>
+        <a
+          href="waitlist.html"
+          class="mt-2 inline-block btn btn-primary w-full text-center"
+          >Join Waitlist</a
+        >
+      </div>
+    </header>
+
+    <!-- Waitlist Section -->
+    <section class="py-16">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl font-bold mb-4 neon-title">Join Our Waitlist</h1>
+        <p class="text-lg text-secondary mb-2">
+          Be the first to try Emome when it launches.
+        </p>
+        <p class="text-lg text-secondary mb-8">
+          Early users get beta access and personalised emotional summaries.
+        </p>
+        <div class="max-w-md mx-auto">
+          <form id="waitlist-form" class="flex flex-col sm:flex-row items-center gap-4">
+            <input
+              type="email"
+              id="waitlist-email"
+              class="flex-1 border-gray-300 rounded-md p-3 w-full"
+              placeholder="your@email.com"
+              required
+            />
+            <button type="submit" class="btn btn-primary w-full sm:w-auto">
+              Notify Me
+            </button>
+          </form>
+          <div id="waitlist-thankyou" class="hidden mt-6 text-green-600">
+            Thanks for signing up! We'll keep you posted.
+          </div>
+          <p class="mt-4 text-sm text-secondary">
+            We respect your privacy – no spam, unsubscribe anytime.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-10 border-t border-gray-200">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-sm"
+      >
+        <p class="mb-2 sm:mb-0">© 2025 Antare Inc. – Emome</p>
+        <div class="flex items-center space-x-4">
+          <a href="contact.html" class="hover:text-gray-700">contactemome@gmail.com</a>
+          <a href="#" class="hover:text-gray-700" aria-label="Twitter">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+            >
+              <path
+                d="M8.29 20c7.547 0 11.675-6.155 11.675-11.49 0-.175 0-.349-.012-.522A8.18 8.18 0 0022 5.92a8.273 8.273 0 01-2.357.637 4.077 4.077 0 001.804-2.23 8.19 8.19 0 01-2.605.981 4.102 4.102 0 00-6.993 3.734A11.648 11.648 0 013 4.861a4.07 4.07 0 001.27 5.482A4.064 4.064 0 012.8 9.71v.051a4.103 4.103 0 003.292 4.019 4.095 4.095 0 01-1.853.07 4.103 4.103 0 003.834 2.828A8.233 8.233 0 012 18.207a11.616 11.616 0 006.29 1.84"
+              />
+            </svg>
+          </a>
+          <a href="#" class="hover:text-gray-700" aria-label="Facebook">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+            >
+              <path
+                d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24h11.49v-9.294H9.691v-3.622h3.124V8.413c0-3.1 1.893-4.788 4.66-4.788 1.325 0 2.464.099 2.797.143v3.24l-1.917.001c-1.504 0-1.794.716-1.794 1.764v2.313h3.588l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.407 24 22.675V1.326C24 .593 23.406 0 22.675 0z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>

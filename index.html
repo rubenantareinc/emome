@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emome – Home</title>
+    <meta
+      name="description"
+      content="Emome is the emotional radar for your relationships. Log interactions, get weighted scores, and see patterns emerge."
+    />
+    <link rel="icon" type="image/png" href="assets/images/emome-logo.png" />
+    <!-- Import futuristic fonts -->
+    <!-- Import futuristic fonts, now including Chakra Petch for the logo -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Rajdhani:wght@400;500;600&family=Chakra+Petch:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- TailwindCSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="assets/style.css" />
+    <style>
+      /* Remove the default Inter font declaration.  Fonts are now imported globally. */
+    </style>
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-40">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between"
+      >
+        <a href="index.html" class="flex items-center">
+          <!-- Glowing Emome logo recreated in text with a neon star -->
+          <span class="logo">Em<span class="logo-star">✦</span>me</span>
+        </a>
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex items-center space-x-4">
+          <a href="index.html" class="nav-link active">Home</a>
+          <a href="features.html" class="nav-link">Features</a>
+          <a href="demo.html" class="nav-link">Demo</a>
+          <a href="founder.html" class="nav-link">Founder</a>
+          <a href="contact.html" class="nav-link">Contact</a>
+          <a
+            href="waitlist.html"
+            class="btn btn-primary text-sm ml-2"
+            >Join Waitlist</a
+          >
+        </nav>
+        <!-- Mobile Hamburger -->
+        <button
+          id="nav-toggle"
+          class="md:hidden flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-accent focus:outline-none"
+          aria-label="Toggle navigation"
+        >
+          <!-- Hamburger Icon -->
+          <svg
+            class="h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden hidden px-4 pb-4">
+        <a href="index.html" class="block nav-link active">Home</a>
+        <a href="features.html" class="block nav-link">Features</a>
+        <a href="demo.html" class="block nav-link">Demo</a>
+        <a href="founder.html" class="block nav-link">Founder</a>
+        <a href="contact.html" class="block nav-link">Contact</a>
+        <a
+          href="waitlist.html"
+          class="mt-2 inline-block btn btn-primary w-full text-center"
+          >Join Waitlist</a
+        >
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12">
+        <!-- Text content -->
+        <div class="lg:w-1/2 hero-content text-center lg:text-left">
+          <h1 class="text-4xl sm:text-5xl font-bold mb-4 leading-tight neon-title">
+            Your emotions are <span class="accent">data</span>.<br />
+            Emome helps you decode them.
+          </h1>
+          <p class="mt-4 text-lg text-secondary">
+            The emotional radar that helps you track the health of your
+            relationships.
+          </p>
+          <div class="mt-8 flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4">
+            <a href="waitlist.html" class="btn btn-primary">Join Waitlist</a>
+            <a href="demo.html" class="btn btn-secondary">Start Tracking</a>
+          </div>
+        </div>
+        <!-- Neon brain and column illustration -->
+        <div class="lg:w-1/2 relative flex justify-center">
+          <div class="brain-column">
+            <img src="assets/images/column.png" alt="Column" class="column-img" />
+            <img src="assets/images/brain.png" alt="Brain" class="brain-img animate-float" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Three‑Step Overview -->
+    <section class="py-16">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl sm:text-4xl font-semibold mb-10 text-gray-900">
+          How Emome Works
+        </h2>
+        <div class="grid gap-8 md:grid-cols-3">
+          <!-- Step 1: Log -->
+          <div class="feature-card">
+            <div
+              class="flex items-center justify-center w-12 h-12 rounded-full mb-4"
+              style="background-color: var(--accent); color: white;"
+            >
+              <!-- Plus icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 4v16m8-8H4"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Log</h3>
+            <p class="text-gray-600">
+              Record each interaction along with who it was with, how long it
+              lasted and how you felt. Capturing your feelings is the first step.
+            </p>
+          </div>
+          <!-- Step 2: Score -->
+          <div class="feature-card">
+            <div
+              class="flex items-center justify-center w-12 h-12 rounded-full mb-4"
+              style="background-color: var(--accent); color: white;"
+            >
+              <!-- Star icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l2.012 6.183a1 1 0 00.95.69h6.55c.969 0 1.371 1.24.588 1.81l-5.3 3.868a1 1 0 00-.364 1.118l2.012 6.182c.3.922-.755 1.688-1.54 1.118l-5.3-3.868a1 1 0 00-1.176 0l-5.3 3.868c-.785.57-1.84-.196-1.54-1.118l2.012-6.182a1 1 0 00-.364-1.118L2.9 11.61c-.783-.57-.381-1.81.588-1.81h6.55a1 1 0 00.95-.69l2.012-6.183z"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Score</h3>
+            <p class="text-gray-600">
+              Emome generates a weighted score for every hangout using both
+              emotional intensity and duration. The result is a nuanced feeling
+              score to guide you.
+            </p>
+          </div>
+          <!-- Step 3: See Patterns -->
+          <div class="feature-card">
+            <div
+              class="flex items-center justify-center w-12 h-12 rounded-full mb-4"
+              style="background-color: var(--accent); color: white;"
+            >
+              <!-- Trending up icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3 17l6-6 4 4 8-8"
+                />
+              </svg>
+            </div>
+            <h3 class="text-xl font-semibold mb-2">See Patterns</h3>
+            <p class="text-gray-600">
+              Watch trends emerge over time on your Relationship Radar and
+              timeline. Discover which connections uplift you and which drag you
+              down.
+            </p>
+          </div>
+        </div>
+        <!-- Secondary CTA -->
+        <div class="mt-12">
+          <p class="mb-4 text-lg text-gray-700">
+            Take control of your emotional well‑being today.
+          </p>
+          <a href="waitlist.html" class="btn btn-primary">Join the Waitlist</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 text-gray-500 py-6">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-sm"
+      >
+        <p class="mb-2 sm:mb-0">© 2025 Antare Inc. – Emome</p>
+        <div class="flex items-center space-x-4">
+          <a href="contact.html" class="hover:text-gray-700">contactemome@gmail.com</a>
+          <!-- Social icons (placeholders) -->
+          <a href="#" class="hover:text-gray-700" aria-label="Twitter">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+            >
+              <path
+                d="M8.29 20c7.547 0 11.675-6.155 11.675-11.49 0-.175 0-.349-.012-.522A8.18 8.18 0 0022 5.92a8.273 8.273 0 01-2.357.637 4.077 4.077 0 001.804-2.23 8.19 8.19 0 01-2.605.981 4.102 4.102 0 00-6.993 3.734A11.648 11.648 0 013 4.861a4.07 4.07 0 001.27 5.482A4.064 4.064 0 012.8 9.71v.051a4.103 4.103 0 003.292 4.019 4.095 4.095 0 01-1.853.07 4.103 4.103 0 003.834 2.828A8.233 8.233 0 012 18.207a11.616 11.616 0 006.29 1.84"
+              />
+            </svg>
+          </a>
+          <a href="#" class="hover:text-gray-700" aria-label="Facebook">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+              class="w-5 h-5"
+            >
+              <path
+                d="M22.675 0H1.325C.593 0 0 .593 0 1.326v21.348C0 23.407.593 24 1.325 24h11.49v-9.294H9.691v-3.622h3.124V8.413c0-3.1 1.893-4.788 4.66-4.788 1.325 0 2.464.099 2.797.143v3.24l-1.917.001c-1.504 0-1.794.716-1.794 1.764v2.313h3.588l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.407 24 22.675V1.326C24 .593 23.406 0 22.675 0z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+  </body>
+</html>
